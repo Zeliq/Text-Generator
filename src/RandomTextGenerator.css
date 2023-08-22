@@ -1,0 +1,205 @@
+body {
+    background-color: #fff;
+    background-image: radial-gradient(circle at top left, #8306FF, rgba(131, 6, 255, 0.4)),
+                      radial-gradient(circle at top right, #DD6C62, rgba(221, 108, 98, 0.4)),
+                      radial-gradient(circle at bottom, #FFF500, rgba(255, 245, 0, 0.4)),
+                      linear-gradient(to bottom right, #00F0FF, rgba(0, 240, 255, 0.4));
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+/* Update the .logo-text class to make the logo text white */
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+    background-image: linear-gradient(to right, #ffffff, #ffffff);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Add a new style for the lighter font weight */
+  .logo-text .lighter-text {
+    font-weight: lighter;
+  }
+  
+  
+  
+  .question,
+  .input-group,
+  .generated-text {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    border: none;
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    margin-left: 10px;
+    border-radius: 6px;
+    padding: 8px 15px;
+  }
+  
+  .generated-text {
+    position: relative;
+    width: 100%; /* Extend the width to match the others */
+    overflow: auto;
+    max-height: calc(40vh - 10px);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+  }
+  
+  .copy-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .copy-icon.visible {
+    opacity: 1;
+  }
+
+/* Add these styles to your existing CSS */
+
+.generated-text {
+    /* Existing styles... */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.4) transparent;
+  }
+  
+  .generated-text::-webkit-scrollbar {
+    width: 6px; /* Set the width of the scrollbar */
+  }
+  
+  .generated-text::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  .generated-text::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.4); /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners for the thumb */
+  }
+  
+  .generated-text::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* Color when hovering over the thumb */
+  }
+  
+  /* Add these styles to your existing CSS */
+
+
+.form-control {
+    /* Existing styles... */
+    background-color: rgba(255, 255, 255, 0.3); /* Keep the background color */
+    backdrop-filter: blur(15px); /* Keep the backdrop filter for glass effect */
+    color: #fff;
+    border: none;
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+  }
+  
+  .form-control:focus {
+    outline: none; /* Remove the default outline when focused */
+  }
+
+/* Add these styles to your existing CSS */
+
+.form-control::-webkit-inner-spin-button,
+.form-control::-webkit-outer-spin-button {
+  appearance: none; /* Remove default appearance */
+  margin: 0; /* Remove default margins */
+  cursor: pointer; /* Add cursor pointer on hover */
+  width: 20px; /* Set width of the spinners */
+  height: 20px; /* Set height of the spinners */
+  background-color: rgba(255, 255, 255, 0.3); /* Spinner background color */
+  border: none;
+  border-radius: 50%; /* Make it circular */
+  font-size: 0; /* Remove text content */
+  opacity: 0.8; /* Opacity for visual effect */
+}
+
+.form-control::-webkit-inner-spin-button:hover,
+.form-control::-webkit-outer-spin-button:hover {
+  opacity: 1; /* Increase opacity on hover */
+}
+
+/* Additional styles for scrollbar */
+.generated-text {
+  /* Existing styles... */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.4) transparent;
+}
+
+.generated-text::-webkit-scrollbar {
+  width: 6px;
+}
+
+.generated-text::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.generated-text::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+}
+
+.generated-text::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+/* Add these styles to your existing CSS */
+
+.form-control:focus {
+  outline: none; /* Remove the default outline when focused */
+  background-color: rgba(255, 255, 255, 0.3); /* Keep the background color */
+}
+
+/* ... other styles ... */
+
+.circle-design {
+    position: absolute;
+    top: 3px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+  }
+  
+  /* ... other styles ... */
+  
